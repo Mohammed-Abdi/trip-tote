@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--bg-size);
+  justify-content: center;
+}
+
+.form input,
+.form button {
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.form select {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.form input {
+  width: min(500px, 100%);
+  min-width: 120px;
+  border: 1px solid var(--border-clr);
+  background-color: var(--background-clr);
+}
+
+.form .inputs {
+  display: flex;
+  justify-content: end;
+  gap: var(--sm-size);
+  min-width: 0;
+  width: min(600px, 100%);
+  /* border: 2px solid red; */
+}
+
+.form button {
+  background-color: var(--text-clr);
+  color: var(--wrapper-clr);
+}
