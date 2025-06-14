@@ -1,0 +1,9 @@
+:root {
+  --background-clr: #f3f3f3;
+  --text-clr: #000;
+  --wrapper-clr: #fff;
+  --border-clr: #d3d3d3;
+  --bg-size: 1.25rem;
+  --md-size: 0.625rem;
+  --sm-size: 0.25rem;
+}
