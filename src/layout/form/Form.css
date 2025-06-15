@@ -37,4 +37,5 @@
 .form button {
   background-color: var(--text-clr);
   color: var(--wrapper-clr);
+  border: 1px solid var(--border-clr);
 }
