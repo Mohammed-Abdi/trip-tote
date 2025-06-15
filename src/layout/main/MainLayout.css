@@ -1,7 +1,6 @@
 .wrapper {
   background-color: var(--wrapper-clr);
-  /* border: 2px solid red; */
-  width: min(64rem, 100% - 40px);
+  width: min(64rem, 100% - 20px);
   margin-inline: auto;
   border-radius: 0.625rem;
   min-height: 90vh;
