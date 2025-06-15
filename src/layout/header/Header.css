@@ -97,7 +97,7 @@ header ul li a .icon {
   }
 
   header ul.close {
-    transform: translateX(-300px);
+    transform: translateX(-500px);
   }
   header ul li a .icon {
     display: flex;
