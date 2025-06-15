@@ -6,7 +6,7 @@ function CheckList() {
   return (
     <div className="checklist">
       {items.map((item) => {
-        return <Item name={item.name} quantity={item.quantity} />;
+        return <Item name={item.name} quantity={item.item} />;
       })}
     </div>
   );
