@@ -2,11 +2,11 @@ import CheckList from "../checklist/CheckList.jsx";
 import Form from "../form/Form.jsx";
 import "./MainLayout.css";
 
-function MainLayout() {
+function MainLayout(props) {
   return (
     <div className="wrapper">
-      <Form />
-      <CheckList />
+      <Form items={props.items} setItems={props.setItems} />
+      <CheckList items={props.items} setItems={props.setItems} />
     </div>
   );
 }
