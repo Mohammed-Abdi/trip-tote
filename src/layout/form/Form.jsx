@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Form.css";
+import items from "../../data/items.js";
 
 function Form() {
   const [quantity, setQuantity] = useState(1);
