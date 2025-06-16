@@ -5,5 +5,5 @@
   border-radius: 0.625rem;
   min-height: 90vh;
   border: 1px solid var(--border-clr);
-  padding: var(--bg-size);
+  padding-block: var(--bg-size);
 }
