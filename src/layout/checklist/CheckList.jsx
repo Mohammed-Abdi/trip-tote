@@ -12,7 +12,11 @@ function CheckList({ items, setItems }) {
   return (
     <div className="checklist">
       {totalNumberOfItems > 0 ? (
-        <div className="total-items">{`${numberOfPackedItems}/${totalNumberOfItems}`}</div>
+        <div className="total-items">{`${numberOfPackedItems}/${totalNumberOfItems} ${
+          numberOfPackedItems / totalNumberOfItems === 1
+            ? " - All packed! 😃"
+            : " - Keep packing! 🫡"
+        }`}</div>
       ) : (
         ""
       )}
