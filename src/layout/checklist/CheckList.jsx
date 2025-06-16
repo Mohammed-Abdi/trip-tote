@@ -5,7 +5,14 @@ function CheckList({ items }) {
   return (
     <div className="checklist">
       {items.map((item, index) => {
-        return <Item key={index} name={item.item} quantity={item.quantity} />;
+        return (
+          <Item
+            key={index}
+            name={item.item}
+            quantity={item.quantity}
+            isPacked={items.isPacked}
+          />
+        );
       })}
     </div>
   );

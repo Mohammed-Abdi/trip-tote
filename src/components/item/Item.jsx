@@ -1,7 +1,7 @@
 import "./Item.css";
 import { Icon } from "@iconify/react";
 
-function Item({ name, quantity }) {
+function Item({ name, quantity, isPacked }) {
   return (
     <div className="item">
       <input type="checkbox" className="checkbox" />
