@@ -1,12 +1,11 @@
 import "./CheckList.css";
-import items from "../../data/items.js";
 import Item from "../../components/item/Item.jsx";
 
-function CheckList() {
+function CheckList({ items }) {
   return (
     <div className="checklist">
-      {items.map((item) => {
-        return <Item name={item.name} quantity={item.item} />;
+      {items.map((item, index) => {
+        return <Item key={index} name={item.item} quantity={item.quantity} />;
       })}
     </div>
   );

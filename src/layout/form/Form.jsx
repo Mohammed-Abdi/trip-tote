@@ -1,23 +1,24 @@
 import { useState } from "react";
 import "./Form.css";
-import items from "../../data/items.js";
 
-function Form() {
+function Form({ setItems }) {
   const [quantity, setQuantity] = useState(1);
   const [item, setItem] = useState("");
 
-  function handleQuantity(e) {
-    setQuantity(Number(e.target.value));
+  function resetInput() {
+    setItem("");
+    setQuantity(1);
   }
-  function handleItem(e) {
-    setItem(e.target.value);
-  }
-  function addItem(p) {
+
+  function handleSubmit(p) {
     p.preventDefault();
-    items.push({ quantity: quantity, item: item });
+    const newItem = { item: item, quantity: quantity };
+    setItems((items) => [...items, newItem]);
+    resetInput();
   }
+
   return (
-    <form action="" className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="addItem">What do you want for your trip ?</label>
       <div className="inputs">
         <select
@@ -25,7 +26,7 @@ function Form() {
           id="numberOfItem"
           className="numberOfItem"
           value={quantity}
-          onChange={handleQuantity}
+          onChange={(e) => setQuantity(Number(e.target.value))}
         >
           <option value={1}>1</option>
           <option value={2}>2</option>
@@ -55,10 +56,10 @@ function Form() {
           name="addItem"
           id="addItem"
           value={item}
-          onChange={handleItem}
+          onChange={(e) => setItem(e.target.value)}
         />
       </div>
-      <button onClick={addItem}>Add</button>
+      <button type="submit">Add</button>
     </form>
   );
 }

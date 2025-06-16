@@ -1,12 +1,15 @@
 import CheckList from "../checklist/CheckList.jsx";
 import Form from "../form/Form.jsx";
 import "./MainLayout.css";
+import { useState } from "react";
 
-function MainLayout(props) {
+function MainLayout() {
+  const [items, setItems] = useState([]);
+
   return (
     <div className="wrapper">
-      <Form items={props.items} setItems={props.setItems} />
-      <CheckList items={props.items} setItems={props.setItems} />
+      <Form setItems={setItems} />
+      <CheckList items={items} setItems={setItems} />
     </div>
   );
 }
