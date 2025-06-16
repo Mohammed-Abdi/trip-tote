@@ -12,7 +12,7 @@ function Form({ setItems }) {
 
   function handleSubmit(p) {
     p.preventDefault();
-    const newItem = { item: item, quantity: quantity };
+    const newItem = { item: item, quantity: quantity, isPacked: false };
     setItems((items) => [...items, newItem]);
     resetInput();
   }
