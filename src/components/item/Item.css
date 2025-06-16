@@ -1,9 +1,21 @@
 .item {
   display: flex;
-  gap: var(--md-size);
   align-items: center;
+  gap: var(--md-size);
   padding: var(--bg-size);
   border: 1px solid var(--border-clr);
   background-color: var(--wrapper-clr);
   border-radius: var(--md-size);
+  position: relative;
+}
+
+.item .checkbox {
+  cursor: pointer;
+}
+
+.item .delete {
+  padding: var(--md-size);
+  right: var(--md-size);
+  position: absolute;
+  cursor: pointer;
 }
