@@ -13,6 +13,7 @@ function Form({ setItems }) {
 
   function handleSubmit(p) {
     p.preventDefault();
+    if (!item) return;
     const newItem = {
       id: nanoid(),
       item: item,
