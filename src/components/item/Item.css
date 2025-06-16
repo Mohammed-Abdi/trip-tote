@@ -10,6 +10,9 @@
 }
 
 .item .checkbox {
+  height: 18px;
+  aspect-ratio: 1/1;
+  accent-color: #00ac00;
   cursor: pointer;
 }
 
@@ -26,6 +29,6 @@
 }
 
 .item .deleteIcon {
-  color: red;
+  color: #ff0000;
   opacity: 0.7;
 }
