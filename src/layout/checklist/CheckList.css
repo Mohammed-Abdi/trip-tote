@@ -1,5 +1,5 @@
 .checklist {
   padding: var(--md-size);
   background-color: var(--background-clr);
-  border-radius: var(--md-size);
+  border-radius: var(--sm-size);
 }
