@@ -1,10 +1,10 @@
 import "./Item.css";
 
-function Item(props) {
+function Item({ name, quantity }) {
   return (
     <div className="item">
-      <span className="item-number">{props.quantity}</span>
-      <span className="item-name">{props.name}</span>
+      <span className="item-number">{quantity}</span>
+      <span className="item-name">{name}</span>
     </div>
   );
 }
