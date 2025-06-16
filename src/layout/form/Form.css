@@ -5,6 +5,7 @@
   gap: var(--bg-size);
   justify-content: center;
   padding-block: var(--bg-size);
+  margin-inline: var(--md-size);
 }
 
 .form input,
