@@ -13,6 +13,11 @@
   cursor: pointer;
 }
 
+.item-name.packed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 .item .delete {
   padding: var(--md-size);
   right: var(--md-size);
