@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.item-name.packed {
+.item-info.packed {
   text-decoration: line-through;
   opacity: 0.5;
 }
