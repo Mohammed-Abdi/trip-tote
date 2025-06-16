@@ -40,7 +40,10 @@ function Header() {
           </a>
         </li>
         <li>
-          <a href="#" className="link">
+          <a
+            href="https://www.linkedin.com/in/mohammed-abdi-tahir/"
+            className="link"
+          >
             <Icon icon="mdi:contact" className="icon" />
             contact
           </a>
