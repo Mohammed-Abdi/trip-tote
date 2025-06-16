@@ -28,16 +28,12 @@ function Header() {
           </a>
         </li>
         <li>
-          <a href="#" className="link">
-            <Icon icon="ix:about-filled" className="icon" />
-            About
-          </a>
+          <Icon icon="ix:about-filled" className="icon" />
+          About
         </li>
         <li>
-          <a href="#" className="link">
-            <Icon icon="ic:baseline-message" className="icon" />
-            Feedback
-          </a>
+          <Icon icon="ic:baseline-message" className="icon" />
+          Feedback
         </li>
         <li>
           <a
