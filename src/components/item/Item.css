@@ -24,3 +24,8 @@
   position: absolute;
   cursor: pointer;
 }
+
+.item .deleteIcon {
+  color: red;
+  opacity: 0.7;
+}
