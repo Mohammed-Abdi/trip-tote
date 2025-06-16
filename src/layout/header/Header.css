@@ -29,6 +29,7 @@ header ul {
   gap: var(--bg-size);
   list-style: none;
   font-weight: 500;
+  z-index: 1;
 }
 
 header ul li:first-child {
