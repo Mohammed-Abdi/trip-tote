@@ -23,10 +23,21 @@
 }
 
 .item .delete {
-  padding: var(--md-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  aspect-ratio: 1/1;
   right: var(--md-size);
   position: absolute;
   cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background 0.3s ease-in-out;
+}
+
+.item .delete:hover {
+  background-color: var(--background-clr);
 }
 
 .item .deleteIcon {
