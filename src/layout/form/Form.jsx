@@ -59,7 +59,7 @@ function Form({ setItems }) {
           onChange={(e) => setItem(e.target.value)}
         />
       </div>
-      <button type="submit">Add</button>
+      <button type="submit">Add Item</button>
     </form>
   );
 }
