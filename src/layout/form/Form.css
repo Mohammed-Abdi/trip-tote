@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: var(--bg-size);
   justify-content: center;
+  padding-block: var(--bg-size);
 }
 
 .form input,
