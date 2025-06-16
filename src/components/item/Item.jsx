@@ -1,10 +1,13 @@
 import "./Item.css";
 import { Icon } from "@iconify/react";
 
-function Item({ name, quantity, isPacked }) {
+function Item({ name, quantity, isPacked, setItems }) {
+  function packItUp() {
+    setItems((items) => [...items, { ...items, isPacked: !isPacked }]);
+  }
   return (
     <div className="item">
-      <input type="checkbox" className="checkbox" />
+      <input type="checkbox" className="checkbox" onClick={packItUp} />
       <span className="item-number">{quantity}</span>
       <span className={`item-name ${isPacked ? "packed" : ""}`}>{name}</span>
       <div className="delete">

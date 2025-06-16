@@ -1,7 +1,7 @@
 import "./CheckList.css";
 import Item from "../../components/item/Item.jsx";
 
-function CheckList({ items }) {
+function CheckList({ items, setItems }) {
   return (
     <div className="checklist">
       {items.map((item, index) => {
@@ -11,6 +11,8 @@ function CheckList({ items }) {
             name={item.item}
             quantity={item.quantity}
             isPacked={item.isPacked}
+            setItems={setItems}
+            index={index}
           />
         );
       })}
