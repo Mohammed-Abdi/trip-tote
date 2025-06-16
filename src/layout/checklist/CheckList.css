@@ -4,6 +4,5 @@
   grid-template-columns: repeat(auto-fit, 300px);
   padding: var(--bg-size) var(--sm-size);
   background-color: var(--background-clr);
-  border-radius: var(--md-size);
   gap: var(--bg-size);
 }
