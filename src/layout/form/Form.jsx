@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Form.css";
+import { nanoid } from "nanoid";
 
 function Form({ setItems }) {
   const [quantity, setQuantity] = useState(1);
@@ -12,7 +13,12 @@ function Form({ setItems }) {
 
   function handleSubmit(p) {
     p.preventDefault();
-    const newItem = { item: item, quantity: quantity, isPacked: false };
+    const newItem = {
+      id: nanoid(),
+      item: item,
+      quantity: quantity,
+      isPacked: false,
+    };
     setItems((items) => [...items, newItem]);
     resetInput();
   }
