@@ -3,6 +3,7 @@
   align-items: center;
   gap: var(--md-size);
   padding: var(--bg-size);
+  padding-right: calc(var(--bg-size) * 2);
   border: 1px solid var(--border-clr);
   background-color: var(--wrapper-clr);
   border-radius: var(--md-size);
