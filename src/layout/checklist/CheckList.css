@@ -5,4 +5,21 @@
   padding: var(--bg-size) var(--sm-size);
   background-color: var(--background-clr);
   gap: var(--bg-size);
+  padding-top: 2.5rem;
+  position: relative;
+}
+
+.total-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--bg-size);
+  border-radius: 50%;
+  padding: var(--bg-size);
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: -1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
