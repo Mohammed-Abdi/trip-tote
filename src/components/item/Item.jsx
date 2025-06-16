@@ -1,19 +1,19 @@
 import "./Item.css";
 import { Icon } from "@iconify/react";
 
-function Item({ name, quantity, isPacked, setItems, index }) {
+function Item({ name, quantity, isPacked, setItems, id }) {
   function packItUp() {
     setItems((prevItems) =>
-      prevItems.map((item, i) => {
-        return index === i ? { ...item, isPacked: !item.isPacked } : item;
+      prevItems.map((item) => {
+        return id === item.id ? { ...item, isPacked: !item.isPacked } : item;
       })
     );
   }
 
   function deleteItem() {
     setItems((prevItems) =>
-      prevItems.filter((item, i) => {
-        return index !== i;
+      prevItems.filter((item) => {
+        return id !== item.id;
       })
     );
   }

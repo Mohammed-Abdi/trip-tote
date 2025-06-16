@@ -4,15 +4,15 @@ import Item from "../../components/item/Item.jsx";
 function CheckList({ items, setItems }) {
   return (
     <div className="checklist">
-      {items.map((item, index) => {
+      {items.map((item) => {
         return (
           <Item
-            key={index}
+            key={item.id}
             name={item.item}
             quantity={item.quantity}
             isPacked={item.isPacked}
             setItems={setItems}
-            index={index}
+            id={item.id}
           />
         );
       })}
