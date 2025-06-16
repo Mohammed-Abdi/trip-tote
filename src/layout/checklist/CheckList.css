@@ -1,5 +1,9 @@
 .checklist {
-  padding: var(--md-size);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 300px);
+  padding: var(--bg-size) var(--sm-size);
   background-color: var(--background-clr);
-  border-radius: var(--sm-size);
+  border-radius: var(--md-size);
+  gap: var(--bg-size);
 }
