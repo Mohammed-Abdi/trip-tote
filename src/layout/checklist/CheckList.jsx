@@ -10,7 +10,7 @@ function CheckList({ items }) {
             key={index}
             name={item.item}
             quantity={item.quantity}
-            isPacked={items.isPacked}
+            isPacked={item.isPacked}
           />
         );
       })}
