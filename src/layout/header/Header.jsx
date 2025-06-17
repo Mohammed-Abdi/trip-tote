@@ -2,13 +2,13 @@ import Hamburger from "../../components/hamburger/Hamburger.jsx";
 import "./Header.css";
 import { Icon } from "@iconify/react";
 
-function Header({ menuIsOpen, setMenuIsOpen }) {
+function Header({ menuIsOpen, setMenuIsOpen, closeMenu }) {
   function toggleMenu() {
     setMenuIsOpen((open) => !open);
   }
 
   return (
-    <header>
+    <header onClick={closeMenu}>
       <Hamburger action={toggleMenu} state={menuIsOpen} />
       <a href="#" className="logo" rel="noopener noreferrer">
         <Icon icon="mdi:palm-tree" className="icon" />

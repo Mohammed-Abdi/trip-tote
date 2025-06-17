@@ -22,7 +22,6 @@ function CheckList({ items, setItems }) {
       )}
 
       <div className="checklist-wrapper">
-        {console.log(`${numberOfPackedItems}/${items.length}`)}
         {items.map((item) => {
           return (
             <Item
