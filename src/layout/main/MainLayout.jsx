@@ -3,11 +3,11 @@ import Form from "../form/Form.jsx";
 import "./MainLayout.css";
 import { useState } from "react";
 
-function MainLayout() {
+function MainLayout({ closeMenu }) {
   const [items, setItems] = useState([]);
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" onClick={closeMenu}>
       <Form setItems={setItems} />
       <CheckList items={items} setItems={setItems} />
     </div>
