@@ -33,6 +33,9 @@ function Form({ setItems }) {
     >
       <label htmlFor="addItem">What do you want for your trip?</label>
       <div className="inputs">
+        <label htmlFor="numberOfItem" className="sr-only">
+          Quantity
+        </label>
         <select
           name="numberOfItem"
           id="numberOfItem"
