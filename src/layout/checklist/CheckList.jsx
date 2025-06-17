@@ -18,7 +18,7 @@ function CheckList({ items, setItems }) {
             : " - Keep packing! 🫡"
         }`}</div>
       ) : (
-        ""
+        <div className="total-items">Let's Start Packing 😁</div>
       )}
 
       <div className="checklist-wrapper">
