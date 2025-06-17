@@ -1,22 +1,20 @@
-import { useState } from "react";
 import Hamburger from "../../components/hamburger/Hamburger.jsx";
 import "./Header.css";
 import { Icon } from "@iconify/react";
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+function Header({ menuIsOpen, setMenuIsOpen }) {
   function toggleMenu() {
-    setIsOpen((open) => !open);
+    setMenuIsOpen((open) => !open);
   }
 
   return (
     <header>
-      <Hamburger action={toggleMenu} state={isOpen} />
+      <Hamburger action={toggleMenu} state={menuIsOpen} />
       <a href="#" className="logo" rel="noopener noreferrer">
         <Icon icon="mdi:palm-tree" className="icon" />
         TripTote
       </a>
-      <ul className={`lists ${isOpen ? "open" : "close"}`}>
+      <ul className={`lists ${menuIsOpen ? "open" : "close"}`}>
         <li>
           <Icon icon="mdi:palm-tree" className="icon" />
           TripTote
