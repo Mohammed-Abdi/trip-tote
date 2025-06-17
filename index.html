@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TripTote</title>
-    <link rel="icon" href="favicon/logo-black.svg" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="author" content="Mohammed Abdi" />
+    <meta
+      name="description"
+      content="TripTote – The perfect packing list app for travelers. Add, manage, and track your essentials effortlessly."
+    />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://trip-tote.vercel.app/" />
+
+    <!-- Favicon (for light/dark modes) -->
     <link
       rel="icon"
-      href="favicon/logo-white.svg"
-      media="(prefers-color-scheme:dark)"
+      href="/favicon/logo-black.svg"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="/favicon/logo-white.svg"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="apple-touch-icon" href="/favicon/logo-black.svg" />
+
+    <!-- Title -->
+    <title>TripTote | Plan Your Packing Like a Pro</title>
+
+    <!-- Open Graph (for link previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TripTote | Pack Like a Pro" />
+    <meta
+      property="og:description"
+      content="The ultimate tool for organized, stress-free travel packing. Built by Mohammed Abdi."
+    />
+    <meta property="og:url" content="https://trip-tote.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://trip-tote.vercel.app/preview/repo-mockup.png"
+    />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TripTote | Pack Like a Pro" />
+    <meta
+      name="twitter:description"
+      content="TripTote – The perfect companion for your next trip. Plan and manage your packing list effortlessly."
+    />
+    <meta
+      name="twitter:image"
+      content="https://trip-tote.vercel.app/preview/repo-mockup.png"
     />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
