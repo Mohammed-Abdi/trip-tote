@@ -3,16 +3,28 @@ import MainLayout from "./layout/main/MainLayout.jsx";
 import { useState } from "react";
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [aboutIsOpen, setAboutIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setMenuIsOpen((open) => !open);
+  }
+
+  function toggleAbout() {
+    setAboutIsOpen((open) => !open);
+  }
+
   function closeMenu() {
-    if (menuIsOpen !== false) setMenuIsOpen((open) => !open);
+    if (menuIsOpen === true) setMenuIsOpen((open) => !open);
   }
 
   return (
     <>
       <Header
         menuIsOpen={menuIsOpen}
-        setMenuIsOpen={setMenuIsOpen}
+        toggleMenu={toggleMenu}
         closeMenu={closeMenu}
+        aboutIsOpen={aboutIsOpen}
+        toggleAbout={toggleAbout}
       />
       <MainLayout closeMenu={closeMenu} />
     </>

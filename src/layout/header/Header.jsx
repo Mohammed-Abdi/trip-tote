@@ -1,39 +1,36 @@
 import Hamburger from "../../components/hamburger/Hamburger.jsx";
+import About from "../../components/about/About.jsx";
 import "./Header.css";
 import { Icon } from "@iconify/react";
 
-function Header({ menuIsOpen, setMenuIsOpen, closeMenu }) {
-  function toggleMenu() {
-    setMenuIsOpen((open) => !open);
-  }
-
+function Header({ menuIsOpen, toggleMenu, aboutIsOpen, toggleAbout }) {
   return (
-    <header onClick={closeMenu}>
-      <Hamburger action={toggleMenu} state={menuIsOpen} />
+    <header>
+      <Hamburger toggleMenu={toggleMenu} state={menuIsOpen} />
       <a href="#" className="logo" rel="noopener noreferrer">
         <Icon icon="mdi:palm-tree" className="icon" />
         TripTote
       </a>
       <ul className={`lists ${menuIsOpen ? "open" : "close"}`}>
-        <li>
+        <li className="nav-link">
           <Icon icon="mdi:palm-tree" className="icon" />
           TripTote
         </li>
-        <li>
+        <li className="nav-link">
           <a href="#" className="link">
             <Icon icon="material-symbols:home-rounded" className="icon" />
             Home
           </a>
         </li>
-        <li>
+        <li className="nav-link" onClick={toggleAbout}>
           <Icon icon="ix:about-filled" className="icon" />
           About
         </li>
-        <li>
+        <li className="nav-link">
           <Icon icon="ic:baseline-message" className="icon" />
           Feedback
         </li>
-        <li>
+        <li className="nav-link">
           <a
             href="https://www.linkedin.com/in/mohammed-abdi-tahir/"
             className="link"
@@ -43,6 +40,7 @@ function Header({ menuIsOpen, setMenuIsOpen, closeMenu }) {
           </a>
         </li>
       </ul>
+      <About aboutIsOpen={aboutIsOpen} toggleAbout={toggleAbout} />
     </header>
   );
 }

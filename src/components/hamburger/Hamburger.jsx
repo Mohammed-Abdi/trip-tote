@@ -1,11 +1,8 @@
 import "./Hamburger.css";
 
-function Hamburger(props) {
+function Hamburger({ state, toggleMenu }) {
   return (
-    <div
-      className={`hamburger ${props.state ? "active" : ""}`}
-      onClick={props.action}
-    >
+    <div className={`hamburger ${state ? "active" : ""}`} onClick={toggleMenu}>
       <div className="bar"></div>
       <div className="bar"></div>
       <div className="bar"></div>

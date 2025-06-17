@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   padding: 1rem 2rem;
   margin-inline: auto;
-  width: min(64rem, 100% - 40px);
+  width: min(64rem, 100% - 60px);
 }
 
 a {
@@ -23,7 +23,7 @@ a {
   font-size: 2rem;
 }
 
-header ul {
+header .lists {
   display: flex;
   align-items: center;
   gap: var(--bg-size);
@@ -32,23 +32,23 @@ header ul {
   z-index: 1;
 }
 
-header ul li:first-child {
+header .lists .nav-link:first-child {
   display: none;
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
 }
 
-header ul li:first-child .icon {
+header .lists .nav-link:first-child .icon {
   font-size: 5rem;
 }
 
-header ul li {
+header .lists .nav-link {
   position: relative;
   cursor: pointer;
 }
 
-header ul li::before {
+header .lists .nav-link::before {
   content: "";
   width: 0;
   height: 2px;
@@ -59,18 +59,18 @@ header ul li::before {
   transition: width 0.3s ease-in-out;
 }
 
-header ul li:hover::before {
+header .lists .nav-link:hover::before {
   width: 100%;
 }
 
-header ul li a,
-header ul li {
+header .lists .nav-link a,
+header .lists .nav-link {
   display: flex;
   align-items: center;
   gap: var(--md-size);
 }
 
-header ul li .icon {
+header .lists .nav-link .icon {
   display: none;
   opacity: 0.7;
 }
@@ -82,7 +82,7 @@ header ul li .icon {
     gap: var(--sm-size);
   }
 
-  header ul {
+  header .lists {
     background-color: var(--wrapper-clr);
     top: 0;
     left: 0;
@@ -99,16 +99,16 @@ header ul li .icon {
     border-radius: 0 var(--md-size) var(--md-size) 0;
   }
 
-  header ul.close {
+  header .lists.close {
     transform: translateX(-500px);
   }
-  header ul li .icon {
+  header .lists .nav-link .icon {
     display: flex;
   }
-  header ul li:hover::before {
+  header .lists .nav-link:hover::before {
     width: 0;
   }
-  header ul li:first-child {
+  header .lists .nav-link:first-child {
     display: flex;
   }
 }
