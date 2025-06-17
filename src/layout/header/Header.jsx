@@ -27,10 +27,6 @@ function Header({ menuIsOpen, toggleMenu, aboutIsOpen, toggleAbout }) {
           About
         </li>
         <li className="nav-link">
-          <Icon icon="ic:baseline-message" className="icon" />
-          Feedback
-        </li>
-        <li className="nav-link">
           <a
             href="https://www.linkedin.com/in/mohammed-abdi-tahir/"
             className="link"
