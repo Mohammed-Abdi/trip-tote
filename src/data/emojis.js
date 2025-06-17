@@ -124,6 +124,7 @@ const emojis = [
   { name: "boat", emoji: "⛴️" },
   { name: "motorcycle", emoji: "🏍️" },
   { name: "scooter", emoji: "🛴" },
+  { name: "ball", emoji: "⚽" },
 
   // Accommodation & Home 🏨
   { name: "hotel", emoji: "🏨" },
